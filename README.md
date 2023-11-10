@@ -7,3 +7,17 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    ```
    $ sudo grub-mkconfig -o /boot/grub/grub.cfg
    ```
+4. C++中矩阵要初始化。如定义一个矩阵：
+   ```c++
+   double data[row][column];
+   ```
+   不初始化会出现Bus error。初始化，给每个元素赋一个初始值：
+   ```c++
+   for(int i=0;i<=row-1;i++)
+    {
+      for(int j=0;j<=column-1;j++)
+      {
+        data[i][j]=0;
+      }
+    }
+   ```
