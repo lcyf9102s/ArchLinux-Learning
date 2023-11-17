@@ -21,7 +21,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
       }
     }
    ```
-5. Fedora上编译Geant4:
+5. linux上编译Geant4（已在opensuse上测试）:
    ```
    $ cmake -DCMAKE_INSTALL_PREFIX=/path/to/geant4/install -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL=ON -DGEANT4_USE_QT=ON -DCMAKE_PREFIX_PATH=/lib64/qt5 -DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_INSTALL_DATADIR=/path/to/geant4/datasets /path/to/geant4/src/code
    ```
