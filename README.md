@@ -27,3 +27,8 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    ```
 6. Opensuse tumbleweed下nvidia导致休眠恢复失败：在`/etc/default/grub`中添加内核启动参数`nouveau.blacklist=1`
 7. 高分屏再x11下显示字体图标过小（如surface pro 7）：kde下，在设置中将缩放改为200%，然后在~/.xprofile中
+8. pacman更新时出现key相关的问题（如无法导入、corrupted）：删除/etc/pacman.d/gnupg,再pacman-key --init
+   ```
+   # rm -rf /etc/pacman.d/gnupg
+   # pacman-key --init
+   ```
