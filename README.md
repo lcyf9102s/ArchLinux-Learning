@@ -21,9 +21,16 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
       }
     }
    ```
-5. linux上编译Geant4（已在opensuse上测试）:
+5. linux上编译Geant4（已在opensuse、wsl2上测试）:
    ```
-   $ cmake -DCMAKE_INSTALL_PREFIX=/path/to/geant4/install -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL=ON -DGEANT4_USE_QT=ON -DCMAKE_PREFIX_PATH=/lib64/qt5 -DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_INSTALL_DATADIR=/path/to/geant4/datasets /path/to/geant4/src/code
+   $ cmake -DCMAKE_INSTALL_PREFIX=/home/neko/g4 \                                                                                      ─╯
+   -DGEANT4_USE_OPENGL_X11=ON \
+   -DGEANT4_USE_RAYTRACER_X11=ON \
+   -DGEANT4_INSTALL_DATA=ON \
+   -DGEANT4_INSTALL_DATADIR=/home/neko/g4_src/datasets \
+   -DGEANT4_USE_QT=ON \
+   -DGEANT4_BUILD_MULTITHREADED=ON \
+   /home/neko/g4_src/geant4-v11.2.1
    ```
 6. Opensuse tumbleweed下nvidia导致休眠恢复失败：在`/etc/default/grub`中添加内核启动参数`nouveau.blacklist=1`
 7. 高分屏再x11下显示字体图标过小（如surface pro 7）：kde下，在设置中将缩放改为200%，然后在~/.xprofile中
