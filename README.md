@@ -39,3 +39,13 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    # rm -rf /etc/pacman.d/gnupg
    # pacman-key --init
    ```
+9. git本地仓库push到远程：
+   ```
+   git config --global user.name "yourname"
+   git config --global user.email example@example.com
+   git add <filename>
+   git commit  -m "***"
+   git push origin main
+   ```
+   
+   
