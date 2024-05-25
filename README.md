@@ -22,7 +22,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
       }
     }
    ```
-6. linux上编译Geant4（已在opensuse、wsl2上测试）:
+6. linux上编译Geant4（已在opensuse、wsl2、Arch Linux上测试）:
    ```
    $ cmake -DCMAKE_INSTALL_PREFIX=/home/neko/g4 \                                                                                      ─╯
    -DGEANT4_USE_OPENGL_X11=ON \
@@ -45,7 +45,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    git config --global user.name "yourname"
    git config --global user.email example@example.com
    git add <filename>
-   git commit  -m "***"
+   git commit -m "***"
    git push origin main
    ```
    
