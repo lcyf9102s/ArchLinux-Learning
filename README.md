@@ -6,12 +6,12 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
 2. GitHub markdown：https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax  
    markdown换行：末尾打两个空格
 
-4. Update grub after installing custom kernel:
+3. Update grub after installing custom kernel:
    ```
    $ sudo grub-mkconfig -o /boot/grub/grub.cfg
    ```
 
-5. C++中矩阵要初始化。如定义一个矩阵：
+4. C++中矩阵要初始化。如定义一个矩阵：
    ```c++
    double data[row][column];
    ```
@@ -26,7 +26,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     }
    ```
 
-6. linux上编译Geant4（已在opensuse、wsl2、Arch Linux上测试）:
+5. linux上编译Geant4（已在opensuse、wsl2、Arch Linux上测试）:
    ```
    $ cmake -DCMAKE_INSTALL_PREFIX=/path/to/install \
       -DGEANT4_USE_OPENGL_X11=ON \
@@ -38,17 +38,17 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
       /path/to/src
    ```
 
-7. Opensuse tumbleweed下nvidia导致休眠恢复失败：在`/etc/default/grub`中添加内核启动参数`nouveau.blacklist=1`
+6. Opensuse tumbleweed下nvidia导致休眠恢复失败：在`/etc/default/grub`中添加内核启动参数`nouveau.blacklist=1`
 
-8. 高分屏再x11下显示字体图标过小（如surface pro 7）：kde下，在设置中将缩放改为200%，然后在~/.xprofile中
+7. 高分屏再x11下显示字体图标过小（如surface pro 7）：kde下，在设置中将缩放改为200%，然后在~/.xprofile中
 
-9. pacman更新时出现key相关的问题（如无法导入、corrupted）：删除/etc/pacman.d/gnupg,再pacman-key --init
+8. pacman更新时出现key相关的问题（如无法导入、corrupted）：删除/etc/pacman.d/gnupg,再pacman-key --init
    ```
    # rm -rf /etc/pacman.d/gnupg
    # pacman-key --init
    ```
 
-10. git本地仓库push到远程：
+9. git本地仓库push到远程：
    ```
    git config --global user.name "yourname"
    git config --global user.email example@example.com
@@ -57,7 +57,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    git push origin main
    ```
 
-11. git使用ssh进行clone和push，publickey添加到GitHub：
+10. git使用ssh进行clone和push，publickey添加到GitHub：
    ```
    ssh-keygen -t rsa -C "your_email@example.com"
    git clone git@github.com:lcyf9102s/ArchLinux-Learning.git
