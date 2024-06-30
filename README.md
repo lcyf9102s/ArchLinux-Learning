@@ -63,5 +63,11 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    git clone git@github.com:lcyf9102s/ArchLinux-Learning.git
    ```
 
+11. 给linux kernel source手动打patch：
+   ```
+   patch -p2 < name.patch
+   ```
+   P.s. 要输入对应需要打patch的文件的相对或绝对路径
+
    
    
