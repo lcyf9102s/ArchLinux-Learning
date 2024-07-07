@@ -58,16 +58,20 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    ```
 
 10. git使用ssh进行clone和push，publickey添加到GitHub：
-   ```
-   ssh-keygen -t rsa -C "your_email@example.com"
-   git clone git@github.com:lcyf9102s/ArchLinux-Learning.git
-   ```
+    ```
+    ssh-keygen -t rsa -C "your_email@example.com"
+    git clone git@github.com:lcyf9102s/ArchLinux-Learning.git
+    ```
 
 11. 给linux kernel source手动打patch：
-   ```
-   patch -p2 < name.patch
-   ```
-   P.s. 要输入对应需要打patch的文件的相对或绝对路径
-
+    ```
+    patch -p2 < name.patch
+    ```
+    P.s. 要输入对应需要打patch的文件的相对或绝对路径
+12. wayland下Geant4可视化窗口无显示问题：
+    运行前添加环境变量：`XDG_SESSION_TYPE=x11`
+    ```
+    $ export XDG_SESSION_TYPE=x11
+    ```
    
    
