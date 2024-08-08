@@ -73,5 +73,10 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     $ export XDG_SESSION_TYPE=x11
     ```
+13. VSCode factional scaling blurring issue fix for HiDPI Display:
+    ```
+    code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland
+    ```
+    
    
    
