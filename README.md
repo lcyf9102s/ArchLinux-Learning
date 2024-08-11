@@ -73,10 +73,11 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     $ export XDG_SESSION_TYPE=x11
     ```
-13. VSCode factional scaling blurring issue fix for HiDPI Display:
+13. VSCode factional scaling blurring issue fix for HiDPI Display (wayland):
     ```
     code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland
     ```
-    
+14. Arch Linux 使用systemd-boot引导时开启secure boot (surface pro)：https://github.com/linux-surface/linux-surface/wiki/Secure-Boot
+
    
    
