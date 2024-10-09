@@ -79,5 +79,9 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
 14. Arch Linux 使用systemd-boot引导时开启secure boot (surface pro)：https://github.com/linux-surface/linux-surface/wiki/Secure-Boot
 
+15. 使用Mosh，以及private key登录，指定ssh端口：
+    ```
+    mosh --ssh="ssh -p PORT_NUMBER -o "IdentitiesOnly=yes" -i /path/to/private/key" user@ip
+    ```
    
    
