@@ -56,6 +56,10 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
    git commit -m "***"
    git push origin main
    ```
+   本地与远程同步：
+   ```
+   git pull
+   ```
 
 10. git使用ssh进行clone和push，publickey添加到GitHub：
     ```
