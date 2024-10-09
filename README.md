@@ -87,5 +87,9 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     mosh --ssh="ssh -p PORT_NUMBER -o "IdentitiesOnly=yes" -i /path/to/private/key" user@ip
     ```
+    scp:
+    ```
+    scp -P PORT_NUMBER -i /path/to/private/key FILENAME user@ip:/target/path/
+    ```
    
    
