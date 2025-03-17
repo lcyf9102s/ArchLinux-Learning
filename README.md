@@ -91,5 +91,8 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     scp -P PORT_NUMBER -i /path/to/private/key FILENAME user@ip:/target/path/
     ```
-   
+16. 批量修改扩展名：
+    ```
+    find `pwd` -name '*.patch' | awk -F '.' '{print $1}' | xargs -I {} mv {}.patch {}.mypatch
+    ```   
    
