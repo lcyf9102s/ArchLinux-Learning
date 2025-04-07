@@ -95,4 +95,8 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     find `pwd` -name '*.patch' | awk -F '.' '{print $1}' | xargs -I {} mv {}.patch {}.mypatch
     ```   
-   
+17. Linux修复dirty ntfs mount：
+    ```
+    sudo ntfsfix -d /dev/sdb1
+    sudo mount -t ntfs3 /dev/sdb1 /mnt/Data
+    ```
