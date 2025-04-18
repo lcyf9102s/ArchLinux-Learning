@@ -100,3 +100,8 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     sudo ntfsfix -d /dev/sdb1
     sudo mount -t ntfs3 /dev/sdb1 /mnt/Data
     ```
+18. Windows下ctex解决编译缺少revtex4-1.cls：
+    ```
+    (1) 下载revtex4-1.zip，解压得到revtex4-1-tds.zip，再解压找到tex/latex/revtex，重命名文件夹为revtex4-1，放进 `CTEX安装目录/MiKTeX/tex/latex/`；
+    (2) 打开winedt，找到TeX - MiKTeX Console，切换至管理员模式，再点击任务 - 刷新文件名数据库。
+    ```
