@@ -105,3 +105,8 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     (1) 下载revtex4-1.zip，解压得到revtex4-1-tds.zip，再解压找到tex/latex/revtex，重命名文件夹为revtex4-1，放进 `CTEX安装目录/MiKTeX/tex/latex/`；
     (2) 打开winedt，找到TeX - MiKTeX Console，切换至管理员模式，再点击任务 - 刷新文件名数据库。
     ```
+19. Fix tensorflow NUMA node zero:
+    ```
+    # echo 0 | sudo tee -a /sys/bus/pci/devices/0000\:01\:00.0/numa_node
+    $ cat /sys/bus/pci/devices/0000\:01\:00.0/numa_node
+    ```
