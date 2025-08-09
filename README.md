@@ -110,3 +110,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     # echo 0 | sudo tee -a /sys/bus/pci/devices/0000\:01\:00.0/numa_node
     $ cat /sys/bus/pci/devices/0000\:01\:00.0/numa_node
     ```
+20. Changing Ollama model path:
+    ```
+    $ OLLAMA_MODELS=/path/to/model ollama serve
+    ```
