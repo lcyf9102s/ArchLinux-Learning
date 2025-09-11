@@ -114,3 +114,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     $ OLLAMA_MODELS=/path/to/model ollama serve
     ```
+21. Passing current environment variables to sudo in Linux terminal:
+    ```
+    sudo -E (your command)
+    ```
