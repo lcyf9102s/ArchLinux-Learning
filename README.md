@@ -118,3 +118,9 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     sudo -E (your command)
     ```
+22. Local git recover deleted files:
+    ```
+    git fetch --all
+    git reset --hard origin/main
+    git pull
+    ```
