@@ -124,3 +124,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     git reset --hard origin/main
     git pull
     ```
+23. Check image ppi:
+    ```
+    identify -format "%[resolution.x]x%[resolution.y] %[units]" image.png
+    ```
