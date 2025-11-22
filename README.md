@@ -128,3 +128,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     identify -format "%[resolution.x]x%[resolution.y] %[units]" image.png
     ```
+24. Build caddy with cloudflare-ip support using xcaddy:
+    ```
+    go/bin/xcaddy build --with github.com/WeidiDeng/caddy-cloudflare-ip
+    ```
