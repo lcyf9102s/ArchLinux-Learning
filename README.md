@@ -132,3 +132,8 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
     go/bin/xcaddy build --with github.com/WeidiDeng/caddy-cloudflare-ip
     ```
+25. Building Mesa on raspberry pi (enable deb-src repo):
+    ```
+    sudo apt build-dep mesa
+    (then follow the instructions on mesa git repo)
+    ```
