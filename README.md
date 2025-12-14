@@ -137,3 +137,7 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     sudo apt build-dep mesa
     (then follow the instructions on mesa git repo)
     ```
+26. Raspberry Pi OS start GUI from CLI:
+    ```
+    $ labwc
+    ```
