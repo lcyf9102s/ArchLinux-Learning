@@ -143,5 +143,5 @@ Arch Linux learning notes ( Arch Wiki: https://archlinux.org/ )
     ```
 27. Disable/enable Android's automatic captive portal detection on Google Pixels:
     ```
-    $ adb shell settings put global captive_portal_mode 0
+    $ adb shell settings put global captive_portal_mode 0/1
     ```
